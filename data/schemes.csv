@@ -1,0 +1,13 @@
+country,scheme_name,target_group,benefit,documents
+India,PM Kisan,Farmers,6000 INR per year,Aadhaar Card;Bank Account;Land Records
+India,Ayushman Bharat,Low Income Families,Health insurance coverage,Aadhaar Card;Income Certificate
+India,National Scholarship Portal,Students,Scholarship support,Student ID;Income Certificate
+India,Sukanya Samriddhi Yojana,Girls,High-interest savings scheme,Birth Certificate;Parent ID
+India,Atal Pension Yojana,Senior Citizens,Monthly pension benefits,Aadhaar Card;Bank Account
+USA,Pell Grant,Students,Financial aid for education,FAFSA Application;Student Records
+USA,Medicaid,Low Income Families,Healthcare assistance,Income Proof;Identity Proof
+USA,SNAP,Low Income Families,Food assistance benefits,Income Proof;Identity Proof
+Canada,Canada Student Grant,Students,Educational grant support,Student Enrollment Proof;Income Information
+Canada,Old Age Security,Senior Citizens,Monthly pension payment,Proof of Age;Residency Documents
+UK,Universal Credit,Low Income Citizens,Monthly financial support,Identity Proof;Income Details
+UK,Student Finance England,Students,Tuition and maintenance support,Student Enrollment Proof;Identity Proof

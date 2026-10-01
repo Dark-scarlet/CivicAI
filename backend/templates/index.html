@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CivicAI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #0f172a;
+
+            color: white;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 20px;
+
+        }
+
+        .container {
+
+            width: 100%;
+
+            max-width: 850px;
+
+            background: #1e293b;
+
+            border-radius: 20px;
+
+            padding: 40px;
+
+            box-shadow: 0 0 30px rgba(0,0,0,0.4);
+
+        }
+
+        .logo {
+
+            text-align: center;
+
+            font-size: 3rem;
+
+            margin-bottom: 10px;
+
+        }
+
+        h1 {
+
+            text-align: center;
+
+            font-size: 2.5rem;
+
+            margin-bottom: 10px;
+
+        }
+
+        .subtitle {
+
+            text-align: center;
+
+            color: #cbd5e1;
+
+            margin-bottom: 35px;
+
+        }
+
+        .tagline {
+
+            text-align: center;
+
+            color: #94a3b8;
+
+            margin-bottom: 35px;
+
+            font-size: 1.05rem;
+
+        }
+
+        label {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+            font-weight: bold;
+
+        }
+
+        input {
+
+            width: 100%;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #334155;
+
+            color: white;
+
+            font-size: 1rem;
+
+            margin-bottom: 20px;
+
+        }
+
+        input::placeholder {
+
+            color: #94a3b8;
+
+        }
+
+        button {
+
+            width: 100%;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #3b82f6;
+
+            color: white;
+
+            font-size: 1rem;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+        }
+
+        button:hover {
+
+            background: #2563eb;
+
+        }
+
+        .examples {
+
+            margin-top: 35px;
+
+            background: #0f172a;
+
+            padding: 20px;
+
+            border-radius: 12px;
+
+        }
+
+        .examples h3 {
+
+            margin-bottom: 15px;
+
+        }
+
+        .example {
+
+            margin-bottom: 10px;
+
+            color: #cbd5e1;
+
+        }
+
+        .footer {
+
+            margin-top: 30px;
+
+            text-align: center;
+
+            color: #64748b;
+
+            font-size: 0.9rem;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            🤖
+        </div>
+
+        <h1>CivicAI</h1>
+
+        <p class="subtitle">
+            AI-Powered Government Benefits Assistant
+        </p>
+
+        <p class="tagline">
+            Discover welfare schemes, scholarships, healthcare support,
+            agricultural benefits and more using natural language.
+        </p>
+
+        <form action="/chat" method="GET">
+
+            <label>How can CivicAI help you today?</label>
+
+            <input
+                type="text"
+                name="message"
+                placeholder="I need help paying college fees in India"
+                required>
+
+            <button type="submit">
+                Ask CivicAI
+            </button>
+
+        </form>
+
+        <div class="examples">
+
+            <h3>Try asking:</h3>
+
+            <div class="example">
+                • I am a student from India
+            </div>
+
+            <div class="example">
+                • I need help paying university fees
+            </div>
+
+            <div class="example">
+                • I own a farm in India
+            </div>
+
+            <div class="example">
+                • I need pension support
+            </div>
+
+            <div class="example">
+                • I need medical assistance
+            </div>
+
+        </div>
+
+        <div class="footer">
+            CivicAI v4 • Empowering Citizens Through AI
+        </div>
+
+    </div>
+
+</body>
+
+</html>

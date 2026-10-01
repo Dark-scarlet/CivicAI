@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>CivicAI Chat</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#1e293b;
+    border-radius:20px;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+}
+
+.chat-area{
+    min-height:400px;
+    margin-top:30px;
+}
+
+.user-bubble{
+    background:#2563eb;
+    padding:15px;
+    border-radius:15px;
+    max-width:75%;
+    margin-left:auto;
+    margin-bottom:15px;
+}
+
+.ai-bubble{
+    background:#334155;
+    padding:15px;
+    border-radius:15px;
+    max-width:75%;
+    margin-bottom:15px;
+    white-space:pre-line;
+    line-height:1.6;
+}
+
+.chat-form{
+    margin-top:25px;
+}
+
+.chat-input{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#334155;
+    color:white;
+    margin-bottom:10px;
+}
+
+.send-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+}
+
+.send-btn:hover{
+    background:#2563eb;
+}
+
+.new-chat{
+    display:inline-block;
+    margin-top:20px;
+    color:white;
+    text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🤖 CivicAI Chat</h1>
+
+<div class="chat-area">
+
+{% for msg in history %}
+
+    {% if msg.role == "user" %}
+
+        <div class="user-bubble">
+            {{ msg.text }}
+        </div>
+
+    {% else %}
+
+        <div class="ai-bubble">
+            {{ msg.text }}
+        </div>
+
+    {% endif %}
+
+{% endfor %}
+
+</div>
+
+<form action="/chat" method="GET" class="chat-form">
+
+<input
+    type="text"
+    name="message"
+    class="chat-input"
+    placeholder="Continue the conversation..."
+    required>
+
+<button type="submit" class="send-btn">
+    Send
+</button>
+
+</form>
+
+<a href="/" class="new-chat">
+🔄 Start New Chat
+</a>
+
+</div>
+
+</body>
+
+</html>
